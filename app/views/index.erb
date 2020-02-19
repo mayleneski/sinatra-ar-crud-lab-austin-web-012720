@@ -1,0 +1,10 @@
+<h1>Magazine Articles</h1>
+<br>
+<% @articles.each do |article| %>
+    <ul>
+    <a href="/articles/<%= article.id %>"
+    <li><h3><%= article.title %></h3><br></li>
+    <li><h3><%= article.content %></h3><br></li>
+    </ul>
+<% end %>
+
